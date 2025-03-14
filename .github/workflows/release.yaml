@@ -1,5 +1,17 @@
 name: Release and Publish to Artifact Registry
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        type: choice
+        required: true
+        default: patch
+        options:
+          - patch
+          - minor
+          - major
+        description: Choose how you are going to bump version
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -24,6 +36,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Release with release-it
-        run: pnpm release --ci --no-npm
+        run: pnpm release ${{ inputs.bump }} --ci --no-npm
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
