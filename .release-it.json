@@ -8,7 +8,7 @@
     }
   },
   "npm": {
-    "publish": false
+    "publish": true
   },
   "git": {
     "commitMessage": "chore: release ${version}",
