@@ -21,6 +21,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Release with release-it
-        run: pnpm release --ci
+        run: pnpm release --ci --no-npm
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
