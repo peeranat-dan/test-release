@@ -11,6 +11,7 @@
     "publish": false
   },
   "git": {
-    "commitMessage": "chore: release ${version}"
+    "commitMessage": "chore: release ${version}",
+    "push": false
   }
 }
