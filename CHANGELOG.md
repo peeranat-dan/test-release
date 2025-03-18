@@ -1,5 +1,17 @@
 # Changelog
 
+# [1.1.0](https://github.com/peeranat-dan/test-release/compare/1.0.3...1.1.0) (2025-03-18)
+
+
+### Bug Fixes
+
+* remove new hello world ([3fed335](https://github.com/peeranat-dan/test-release/commit/3fed335cb89326df46b79957ec5f9c795b48f93f))
+
+
+### Features
+
+* add more hello World ([e2a6246](https://github.com/peeranat-dan/test-release/commit/e2a62465a2ff23f65b34c5ba1fce8456f95baa74))
+
 ## [1.0.3](https://github.com/peeranat-dan/test-release/compare/1.0.2...1.0.3) (2025-03-18)
 
 ## [1.0.2](https://github.com/peeranat-dan/test-release/compare/1.0.1...1.0.2) (2025-03-17)
